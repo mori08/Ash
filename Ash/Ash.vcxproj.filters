@@ -57,6 +57,9 @@
     <Filter Include="src\MyLibrary">
       <UniqueIdentifier>{3dcbb631-6e35-49b1-877b-88d68fc94947}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Config">
+      <UniqueIdentifier>{0554c3fc-063f-4b8b-85b6-4ff49bc950b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -206,6 +209,9 @@
   <ItemGroup>
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp">
       <Filter>src\MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config\Config.hpp">
+      <Filter>src\Config</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
