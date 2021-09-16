@@ -1,5 +1,6 @@
 ﻿#include"MyLibrary/MyLibrary.hpp"
 #include"Config/Config.hpp"
+#include"Scene/Scene.hpp"
 
 
 void Main()
@@ -14,6 +15,9 @@ void Main()
 	{
 		FontAsset::Register(ToString(fontSize), fontSize, Typeface::Medium);
 	}
+
+	// シーン設定
+	Ash::MyApp sceneManager;
 
 	while (System::Update())
 	{

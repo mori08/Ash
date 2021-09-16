@@ -165,6 +165,7 @@
   <ItemGroup>
     <ClInclude Include="src\Config\Config.hpp" />
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp" />
+    <ClInclude Include="src\Scene\Scene.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

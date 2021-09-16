@@ -60,6 +60,9 @@
     <Filter Include="src\Config">
       <UniqueIdentifier>{0554c3fc-063f-4b8b-85b6-4ff49bc950b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{9c639278-0404-42a2-a3a1-8e97aa2fb848}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -212,6 +215,9 @@
     </ClInclude>
     <ClInclude Include="src\Config\Config.hpp">
       <Filter>src\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Scene.hpp">
+      <Filter>src\Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
