@@ -1,20 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Resource Files\example">
-      <UniqueIdentifier>{8b04c3b0-3b5b-4f9a-add9-f54abc0118ed}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files\engine">
       <UniqueIdentifier>{972ca6b5-b566-47a1-b6e5-5cd538d7268c}</UniqueIdentifier>
@@ -61,47 +50,13 @@
     <Filter Include="Resource Files\nlp\japanese\jumanpp">
       <UniqueIdentifier>{f6fe2a89-c647-48e2-bb2c-27b03b1aeced}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\example\font">
-      <UniqueIdentifier>{e011e289-148f-4f61-b178-75bd63133a24}</UniqueIdentifier>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Resource Files\example\font\AnnyantRoman">
-      <UniqueIdentifier>{54d1e03d-1d02-4bca-a045-a73de6bc8102}</UniqueIdentifier>
+    <Filter Include="src\MyLibrary">
+      <UniqueIdentifier>{3dcbb631-6e35-49b1-877b-88d68fc94947}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\example\font\NotoSansCJKjp">
-      <UniqueIdentifier>{ec80af61-28a4-433a-aa04-102d099f524d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\font\Pecita">
-      <UniqueIdentifier>{59c8b538-0125-4cbe-8ad8-2d327d00f708}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\script">
-      <UniqueIdentifier>{6d671c66-2133-4626-a10a-1a199c017c5d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\svm">
-      <UniqueIdentifier>{efc7c679-c387-43b2-93ed-b6e6ccbcd1a0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\shader">
-      <UniqueIdentifier>{2bcb9a5f-7580-4d6a-bd0b-1f8e16a14f36}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\shader\2d">
-      <UniqueIdentifier>{0b9673e5-5c13-4129-84ac-1a71a27b3f31}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\config">
-      <UniqueIdentifier>{89c12675-1e86-4726-8c52-108fd67b62e5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\gui">
-      <UniqueIdentifier>{243acd54-757e-498e-81c4-c8164a884026}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\font\LogoTypeGothic">
-      <UniqueIdentifier>{b3586a98-5569-49e1-b9d6-cd80cf76ce9d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\example\zip">
-      <UniqueIdentifier>{81d8d80c-f0ce-492f-8fee-c5502c31bc0e}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -124,21 +79,6 @@
     </Image>
     <Image Include="App\engine\texture\box-shadow\64.png">
       <Filter>Resource Files\engine\texture\box-shadow</Filter>
-    </Image>
-    <Image Include="App\example\particle.png">
-      <Filter>Resource Files\example</Filter>
-    </Image>
-    <Image Include="App\example\siv3d-kun.png">
-      <Filter>Resource Files\example</Filter>
-    </Image>
-    <Image Include="App\example\windmill.png">
-      <Filter>Resource Files\example</Filter>
-    </Image>
-    <Image Include="App\example\bay.jpg">
-      <Filter>Resource Files\example</Filter>
-    </Image>
-    <Image Include="App\example\test.gif">
-      <Filter>Resource Files\example</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
@@ -210,21 +150,6 @@
     <None Include="App\engine\soundfont\GMGSx.sf2.zstdcmp">
       <Filter>Resource Files\engine\soundfont</Filter>
     </None>
-    <None Include="App\example\font\NotoSansCJKjp\README">
-      <Filter>Resource Files\example\font\NotoSansCJKjp</Filter>
-    </None>
-    <None Include="App\example\font\Pecita\LICENSE">
-      <Filter>Resource Files\example\font\Pecita</Filter>
-    </None>
-    <None Include="App\example\svm\a1a_testing">
-      <Filter>Resource Files\example\svm</Filter>
-    </None>
-    <None Include="App\example\svm\a1a_training">
-      <Filter>Resource Files\example\svm</Filter>
-    </None>
-    <None Include="App\example\test.toml">
-      <Filter>Resource Files\example</Filter>
-    </None>
     <None Include="App\engine\shader\gaussian_blur_9.ps">
       <Filter>Resource Files\engine\shader</Filter>
     </None>
@@ -261,60 +186,6 @@
     <None Include="App\engine\shader\fullscreen_triangle_resolve.vs">
       <Filter>Resource Files\engine\shader</Filter>
     </None>
-    <None Include="App\example\shader\2d\default_shape.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\default_texture.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\game_of_life.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\grayscale.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\multi_texture_blend.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\multi_texture_mask.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\poisson_disk.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\posterize.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\rgb_shift.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\rgb_to_bgr.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\shader\2d\swirl.hlsl">
-      <Filter>Resource Files\example\shader\2d</Filter>
-    </None>
-    <None Include="App\example\config\config.csv">
-      <Filter>Resource Files\example\config</Filter>
-    </None>
-    <None Include="App\example\config\config.ini">
-      <Filter>Resource Files\example\config</Filter>
-    </None>
-    <None Include="App\example\config\config.json">
-      <Filter>Resource Files\example\config</Filter>
-    </None>
-    <None Include="App\example\config\config.toml">
-      <Filter>Resource Files\example\config</Filter>
-    </None>
-    <None Include="App\example\gui\gui.toml">
-      <Filter>Resource Files\example\gui</Filter>
-    </None>
-    <None Include="App\example\font\LogoTypeGothic\LICENSE_E">
-      <Filter>Resource Files\example\font\LogoTypeGothic</Filter>
-    </None>
-    <None Include="App\example\zip\zip_test.zip">
-      <Filter>Resource Files\example\zip</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="App\engine\font\fontawesome\LICENSE.txt">
@@ -323,56 +194,18 @@
     <Text Include="App\engine\font\noto\LICENSE_OFL.txt">
       <Filter>Resource Files\engine\font\noto</Filter>
     </Text>
-    <Text Include="App\example\font\AnnyantRoman\readme.txt">
-      <Filter>Resource Files\example\font\AnnyantRoman</Filter>
-    </Text>
-    <Text Include="App\example\font\NotoSansCJKjp\LICENSE_OFL.txt">
-      <Filter>Resource Files\example\font\NotoSansCJKjp</Filter>
-    </Text>
-    <Text Include="App\example\script\paint.txt">
-      <Filter>Resource Files\example\script</Filter>
-    </Text>
-    <Text Include="App\example\script\test.txt">
-      <Filter>Resource Files\example\script</Filter>
-    </Text>
-    <Text Include="App\example\LICENSE.txt">
-      <Filter>Resource Files\example</Filter>
-    </Text>
-    <Text Include="App\example\test.txt">
-      <Filter>Resource Files\example</Filter>
-    </Text>
-    <Text Include="App\example\font\LogoTypeGothic\ReadMe_windows.txt">
-      <Filter>Resource Files\example\font\LogoTypeGothic</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
-    <Font Include="App\example\font\AnnyantRoman\AnnyantRoman.ttf">
-      <Filter>Resource Files\example\font\AnnyantRoman</Filter>
-    </Font>
-    <Font Include="App\example\font\NotoSansCJKjp\NotoSansCJKjp-Regular.otf">
-      <Filter>Resource Files\example\font\NotoSansCJKjp</Filter>
-    </Font>
-    <Font Include="App\example\font\Pecita\Pecita.otf">
-      <Filter>Resource Files\example\font\Pecita</Filter>
-    </Font>
-    <Font Include="App\example\font\LogoTypeGothic\LogoTypeGothic.otf">
-      <Filter>Resource Files\example\font\LogoTypeGothic</Filter>
-    </Font>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyLibrary\MyLibrary.cpp">
+      <Filter>src\MyLibrary</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Media Include="App\example\shot.mp3">
-      <Filter>Resource Files\example</Filter>
-    </Media>
-    <Media Include="App\example\test.mp3">
-      <Filter>Resource Files\example</Filter>
-    </Media>
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="App\example\test.xml">
-      <Filter>Resource Files\example</Filter>
-    </Xml>
-    <Xml Include="App\example\config\config.xml">
-      <Filter>Resource Files\example\config</Filter>
-    </Xml>
+    <ClInclude Include="src\MyLibrary\MyLibrary.hpp">
+      <Filter>src\MyLibrary</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
