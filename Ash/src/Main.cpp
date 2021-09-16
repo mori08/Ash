@@ -10,6 +10,10 @@ void Main()
 
 	// アセット管理
 	Ash::registerAsset(U"asset/");
+	for (int32 fontSize = 10; fontSize <= 40; ++fontSize) // フォントサイズ
+	{
+		FontAsset::Register(ToString(fontSize), fontSize, Typeface::Medium);
+	}
 
 	while (System::Update())
 	{
