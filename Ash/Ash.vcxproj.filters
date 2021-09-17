@@ -72,6 +72,9 @@
     <Filter Include="src\Scene\Title">
       <UniqueIdentifier>{2a8c1b64-20f4-485a-81fc-c667968b1412}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\MyPixelShader">
+      <UniqueIdentifier>{ebb20f48-4dfa-45d3-9ae9-10a549110319}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -223,6 +226,9 @@
     <ClCompile Include="src\Scene\Title\TitleScene.cpp">
       <Filter>src\Scene\Title</Filter>
     </ClCompile>
+    <ClCompile Include="src\MyPixelShader\MyPixelShader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp">
@@ -242,6 +248,9 @@
     </ClInclude>
     <ClInclude Include="src\Scene\Title\TitleScene.hpp">
       <Filter>src\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyPixelShader\MyPixelShader.hpp">
+      <Filter>src\MyPixelShader</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
 ﻿#include"MyLibrary/MyLibrary.hpp"
+#include"MyPixelShader/MyPixelShader.hpp"
 #include"Config/Config.hpp"
 
 // シーン
@@ -13,6 +14,7 @@ void Main()
 
 	// アセット管理
 	Ash::registerAsset(U"asset/");
+	Ash::MyPixelShader::loadPixelShader();
 	for (int32 fontSize = 10; fontSize <= 40; ++fontSize) // フォントサイズ
 	{
 		FontAsset::Register(ToString(fontSize), fontSize, Typeface::Medium);

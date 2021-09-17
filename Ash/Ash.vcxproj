@@ -162,6 +162,7 @@
     <ClCompile Include="src\ButtonSet\ButtonSet.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\MyLibrary\MyLibrary.cpp" />
+    <ClCompile Include="src\MyPixelShader\MyPixelShader.cpp" />
     <ClCompile Include="src\Scene\Title\TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +170,7 @@
     <ClInclude Include="src\ButtonSet\Button\Button.hpp" />
     <ClInclude Include="src\Config\Config.hpp" />
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp" />
+    <ClInclude Include="src\MyPixelShader\MyPixelShader.hpp" />
     <ClInclude Include="src\Scene\Scene.hpp" />
     <ClInclude Include="src\Scene\Title\TitleScene.hpp" />
   </ItemGroup>
