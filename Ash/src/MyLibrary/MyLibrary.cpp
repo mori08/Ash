@@ -65,8 +65,8 @@ namespace Ash
 		internalDividingPoint(showNum[3], (fpsVector[44] + fpsVector[45]) / 2, 0.3);
 		internalDividingPoint(showNum[4], fpsVector[59], 0.3);
 
-		const double rate = 800.0 / 60.0;
-		const double offset = -400;
+		const double rate = Scene::Width()/ 60.0;
+		const double offset = -Scene::Width()/2;
 
 		Line(rate * showNum[0] + offset, 0, rate * showNum[4] + offset, 0).draw(8, Palette::Blue);
 		Line(rate * showNum[1] + offset, 0, rate * showNum[3] + offset, 0).draw(10, Palette::Aqua);

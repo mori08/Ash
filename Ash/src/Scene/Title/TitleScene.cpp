@@ -1,6 +1,7 @@
 #include "TitleScene.hpp"
 #include "../../Config/Config.hpp"
 #include "../../MyLibrary/MyLibrary.hpp"
+#include "../../MyPixelShader/MyPixelShader.hpp"
 
 namespace
 {
@@ -97,31 +98,76 @@ namespace Ash
 
 	void TitleScene::draw() const
 	{
+		// ƒƒS‚ğ•`‰æ‚·‚éÀ•W
+		static const Point LOGO_POS = Config::get<Point>(U"TitleScene.logoPos");
+
+		// ”wŒiF
+		Scene::Rect().draw(MyBlack);
+
+		drawScreen();
+		drawLine();
+
+		// ƒƒS‚Ì•`‰æ
+		TextureAsset(U"TitleLogo").drawAt(LOGO_POS);
+
 		// ƒJ[ƒ\ƒ‹‚Ì•`‰æ
 		getRectFromCenter
 		(
 			m_buttonSet.getSelectedButton().getRegion().center().asPoint(),
 			Size((int32)m_cursorWidth, buttonSize().y)
-		).draw(MyWhite);
+		).draw(MyBlack);
 		getRectFromCenter
 		(
 			m_buttonSet.getSelectedButton().getRegion().center().asPoint(),
 			Size((int32)m_cursorLineLength, 1)
-		).draw(ColorF(MyWhite, m_cursorLineAlpha));
+		).draw(ColorF(MyBlack, m_cursorLineAlpha));
 
 		// ƒ{ƒ^ƒ“‚Ì•`‰æ
 		for (const auto& button : m_buttonSet.getButtonList())
 		{
 			Color color = (button.first == m_buttonSet.getSelectedButton().getName())
-				? MyBlack
-				: MyWhite;
+				? MyGray
+				: MyBlack;
 
 			FontAsset(U"20")(button.first)
 				.drawAt(button.second.getRegion().center(), color);
 		}
+	}
 
-		static const Point LOGO_POS = Config::get<Point>(U"TitleScene.logoPos");
-		// ƒƒS‚Ì•`‰æ
-		TextureAsset(U"TitleLogo").drawAt(LOGO_POS);
+
+	void TitleScene::drawScreen() const
+	{
+		// ‰æ–Ê‚ÌŒ`
+		static const RoundRect SHAPE = Config::get<RoundRect>(U"TitleScene.Screen.roundRect");
+		// ‰æ–Ê‚Ì‚Ú‚©‚µ
+		static const double BLUR = Config::get<double>(U"TitleScene.Screen.blur");
+		// ‰æ–Ê‚ÌL‚ª‚é•p“x
+		static const double SPREAD_FREQUENCY = Config::get<double>(U"TitleScene.Screen.spreadFrequency");
+
+		// ‰æ–Ê‚ÌŒ`‚ğ‚µ‚½Œõ‚Ì•`‰æ
+		SHAPE.drawShadow
+		(
+			Vec2::Zero(),
+			BLUR,
+			randomFrequency(SPREAD_FREQUENCY),
+			MyGray
+		);
+	}
+
+
+	void TitleScene::drawLine() const
+	{
+		// ü‚ğ•`‰æ‚·‚é•p“x
+		static const double FREQUENCY = Config::get<double>(U"TitleScene.Line.frequency");
+		// ü‚Ì•
+		static const int32 WIDTH = Config::get<int32>(U"TitleScene.Line.width");
+		// ü‚Ì•s“§–¾“x
+		static const double ALPHA = Config::get<double>(U"TitleScene.Line.alpha");
+
+		if (randomFrequency(FREQUENCY))
+		{
+			Rect(0, Random(Scene::Height()), Scene::Width(), WIDTH)
+				.draw(ColorF(MyBlack, ALPHA));
+		}
 	}
 }

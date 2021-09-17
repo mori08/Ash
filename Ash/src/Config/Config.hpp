@@ -70,6 +70,15 @@ namespace Ash
 	}
 
 	template<>
+	inline RoundRect Config::get(const String& name)
+	{
+		return RoundRect(
+			instance().get<Rect>(name),
+			instance().m_toml[name][U"r"].get<double>()
+		);
+	}
+
+	template<>
 	inline ColorF Config::get(const String& name)
 	{
 		ColorF color(instance().m_toml[name][U"rgb"].getOr<double>(0.0));

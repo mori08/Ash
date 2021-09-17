@@ -1,17 +1,25 @@
 [Window]
-    size={x=800, y=600}
-    name="ハイイロノガメン"
+    size = {x=640, y=480}
+    name = "ハイイロノガメン"
 
 [TitleScene]
-    logoPos={x=400,y=200}
-    buttonSize={x=150, y=30}
-    cursorMoveRate=0.005
+    logoPos    = {x=320,y=200}
+    buttonSize = {x=150, y=30}
+    cursorMoveRate = 0.005
+    [TitleScene.Screen]
+        roundRect       = {x=-50,y=-50,w=740,h=580,r=100}
+        blur            = 140
+        spreadFrequency = 3
+    [TitleScene.Line]
+        frequency = 2
+        width     = 1
+        alpha     = 0.2
     [TitleScene.NewgameButton]
-        name="はじめから"
-        region={x=325,y=375,w=150,h=30}
+        name   = "はじめから"
+        region = {x=245,y=300,w=150,h=30}
     [TitleScene.LoadgameButton]
-        name="つづきから"
-        region={x=325,y=435,w=150,h=30}
+        name   = "つづきから"
+        region = {x=245,y=350,w=150,h=30}
     [TitleScene.ExitgameButton]
-        name="やめる"
-        region={x=325,y=495,w=150,h=30}
+        name   = "やめる"
+        region = {x=245,y=400,w=150,h=30}

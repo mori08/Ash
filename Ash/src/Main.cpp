@@ -11,6 +11,10 @@ void Main()
 	// ウィンドウの設定
 	Window::Resize(Ash::Config::get<Size>(U"Window.size"));
 	Window::SetTitle(Ash::Config::get<String>(U"Window.name"));
+	
+	// 描画設定
+	Scene::SetBackground(Ash::MyBlack);
+	Scene::Resize(Ash::Config::get<Size>(U"Window.size"));
 
 	// アセット管理
 	Ash::registerAsset(U"asset/");

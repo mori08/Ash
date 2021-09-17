@@ -10,6 +10,8 @@ namespace Ash
 	// ”’
 	constexpr ColorF MyWhite(Color(0xF0));
 
+	// ŠD
+	constexpr ColorF MyGray(Color(0xB0));
 
 #ifdef _DEBUG
 	/// <summary>

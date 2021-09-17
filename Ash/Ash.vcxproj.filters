@@ -75,6 +75,9 @@
     <Filter Include="src\MyPixelShader">
       <UniqueIdentifier>{ebb20f48-4dfa-45d3-9ae9-10a549110319}</UniqueIdentifier>
     </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{0be1f91f-0f48-4b88-8e6f-14dd32910836}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -204,6 +207,9 @@
     <None Include="App\engine\shader\fullscreen_triangle_resolve.vs">
       <Filter>Resource Files\engine\shader</Filter>
     </None>
+    <None Include="App\asset\shader\TitleLogoShader.hlsl">
+      <Filter>shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="App\engine\font\fontawesome\LICENSE.txt">
@@ -227,7 +233,7 @@
       <Filter>src\Scene\Title</Filter>
     </ClCompile>
     <ClCompile Include="src\MyPixelShader\MyPixelShader.cpp">
-      <Filter>src</Filter>
+      <Filter>src\MyPixelShader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

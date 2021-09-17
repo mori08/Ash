@@ -34,5 +34,17 @@ namespace Ash
 
 		void draw()const override;
 
+	private:
+
+		/// <summary>
+		/// ‰æ–Ê‚ÌŒ`‚ÌŒõ‚ğ•`‰æ
+		/// </summary>
+		void drawScreen() const;
+
+		/// <summary>
+		/// ü‚ÌŒ`‚ğ‚µ‚½‰e‚ğ•`‰æ
+		/// </summary>
+		void drawLine() const;
+
 	};
 }
