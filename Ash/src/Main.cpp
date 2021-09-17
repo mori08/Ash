@@ -1,6 +1,8 @@
 ﻿#include"MyLibrary/MyLibrary.hpp"
 #include"Config/Config.hpp"
-#include"Scene/Scene.hpp"
+
+// シーン
+#include"Scene/Title/TitleScene.hpp"
 
 
 void Main()
@@ -18,9 +20,12 @@ void Main()
 
 	// シーン設定
 	Ash::MyApp sceneManager;
+	sceneManager.add<Ash::TitleScene>(Ash::SceneName::TITLE);
 
 	while (System::Update())
 	{
+		sceneManager.update();
+
 		Ash::showFPS();
 	}
 }

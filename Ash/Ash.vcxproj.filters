@@ -69,6 +69,9 @@
     <Filter Include="src\ButtonSet\Button">
       <UniqueIdentifier>{1a1299cf-ed6f-45c8-91d8-a8e1e14660bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene\Title">
+      <UniqueIdentifier>{2a8c1b64-20f4-485a-81fc-c667968b1412}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -215,7 +218,10 @@
       <Filter>src\MyLibrary</Filter>
     </ClCompile>
     <ClCompile Include="src\ButtonSet\ButtonSet.cpp">
-      <Filter>src</Filter>
+      <Filter>src\ButtonSet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Title\TitleScene.cpp">
+      <Filter>src\Scene\Title</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -233,6 +239,9 @@
     </ClInclude>
     <ClInclude Include="src\ButtonSet\Button\Button.hpp">
       <Filter>src\ButtonSet\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Title\TitleScene.hpp">
+      <Filter>src\Scene\Title</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
