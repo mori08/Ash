@@ -7,7 +7,8 @@ namespace Ash
 	// シーンの名前
 	enum class SceneName
 	{
-		TITLE // タイトル
+		TITLE, // タイトル
+		ROOM   // 部屋探索
 	};
 
 	// シーン間で共有されるデータ
