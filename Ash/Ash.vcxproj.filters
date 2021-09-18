@@ -81,6 +81,18 @@
     <Filter Include="src\Scene\Room">
       <UniqueIdentifier>{ce7abece-eaea-45aa-9adb-0c307cd34c63}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene\Load">
+      <UniqueIdentifier>{f032d1e6-a527-47db-ba17-2e69d27ffa04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SliceTexture">
+      <UniqueIdentifier>{94f5f1f3-6455-4455-a5f7-939e546e3561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SliceTexture\Linearly">
+      <UniqueIdentifier>{c4b6cb2c-040c-44eb-915a-cc2f104f904e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SliceTexture\Animation">
+      <UniqueIdentifier>{b86cf1b8-c2ce-41d6-8def-62422ecf172a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -241,6 +253,12 @@
     <ClCompile Include="src\Scene\Room\RoomScene.cpp">
       <Filter>src\Scene\Room</Filter>
     </ClCompile>
+    <ClCompile Include="src\Scene\SliceTexture\Animation\Animation.cpp">
+      <Filter>src\SliceTexture\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\SliceTexture\SliceTexture.cpp">
+      <Filter>src\SliceTexture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp">
@@ -266,6 +284,18 @@
     </ClInclude>
     <ClInclude Include="src\Scene\Room\RoomScene.hpp">
       <Filter>src\Scene\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Load\LoadScene.hpp">
+      <Filter>src\Scene\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SliceTexture\Linearly\Linearly.hpp">
+      <Filter>src\SliceTexture\Linearly</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SliceTexture\Animation\Animation.hpp">
+      <Filter>src\SliceTexture\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SliceTexture\SliceTexture.hpp">
+      <Filter>src\SliceTexture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
