@@ -176,6 +176,7 @@
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp" />
     <ClInclude Include="src\MyPixelShader\MyPixelShader.hpp" />
     <ClInclude Include="src\Scene\Load\LoadScene.hpp" />
+    <ClInclude Include="src\Scene\Room\RoomEvent\RoomEvent.hpp" />
     <ClInclude Include="src\Scene\Room\RoomPlayer\RoomPlayer.hpp" />
     <ClInclude Include="src\Scene\Room\RoomScene.hpp" />
     <ClInclude Include="src\Scene\Scene.hpp" />

@@ -96,6 +96,9 @@
     <Filter Include="src\SliceTexture\Linearly">
       <UniqueIdentifier>{540e0d4c-c8cd-4997-be3e-8f0c859ee69b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene\Room\RoomEvent">
+      <UniqueIdentifier>{93f4a152-a591-4458-8b50-fc6825dd7149}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -305,6 +308,9 @@
     </ClInclude>
     <ClInclude Include="src\SliceTexture\Linearly\Linearly.hpp">
       <Filter>src\SliceTexture\Linearly</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Room\RoomEvent\RoomEvent.hpp">
+      <Filter>src\Scene\Room\RoomEvent</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
