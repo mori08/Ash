@@ -84,14 +84,17 @@
     <Filter Include="src\Scene\Load">
       <UniqueIdentifier>{f032d1e6-a527-47db-ba17-2e69d27ffa04}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\SliceTexture">
-      <UniqueIdentifier>{94f5f1f3-6455-4455-a5f7-939e546e3561}</UniqueIdentifier>
+    <Filter Include="src\Scene\Room\RoomPlayer">
+      <UniqueIdentifier>{53420de2-5e0c-4325-b728-9b903d9a8a21}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\SliceTexture\Linearly">
-      <UniqueIdentifier>{c4b6cb2c-040c-44eb-915a-cc2f104f904e}</UniqueIdentifier>
+    <Filter Include="src\SliceTexture">
+      <UniqueIdentifier>{bfd62f52-e74e-4792-b355-e9bd13edb2a3}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\SliceTexture\Animation">
-      <UniqueIdentifier>{b86cf1b8-c2ce-41d6-8def-62422ecf172a}</UniqueIdentifier>
+      <UniqueIdentifier>{81030cd0-3319-44fd-86c0-b1dd2a11b9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SliceTexture\Linearly">
+      <UniqueIdentifier>{540e0d4c-c8cd-4997-be3e-8f0c859ee69b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -253,11 +256,14 @@
     <ClCompile Include="src\Scene\Room\RoomScene.cpp">
       <Filter>src\Scene\Room</Filter>
     </ClCompile>
-    <ClCompile Include="src\Scene\SliceTexture\Animation\Animation.cpp">
+    <ClCompile Include="src\SliceTexture\SliceTexture.cpp">
+      <Filter>src\SliceTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SliceTexture\Animation\Animation.cpp">
       <Filter>src\SliceTexture\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="src\Scene\SliceTexture\SliceTexture.cpp">
-      <Filter>src\SliceTexture</Filter>
+    <ClCompile Include="src\Scene\Room\RoomPlayer\RoomPlayer.cpp">
+      <Filter>src\Scene\Room\RoomPlayer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -288,14 +294,17 @@
     <ClInclude Include="src\Scene\Load\LoadScene.hpp">
       <Filter>src\Scene\Load</Filter>
     </ClInclude>
-    <ClInclude Include="src\Scene\SliceTexture\Linearly\Linearly.hpp">
-      <Filter>src\SliceTexture\Linearly</Filter>
+    <ClInclude Include="src\Scene\Room\RoomPlayer\RoomPlayer.hpp">
+      <Filter>src\Scene\Room\RoomPlayer</Filter>
     </ClInclude>
-    <ClInclude Include="src\Scene\SliceTexture\Animation\Animation.hpp">
+    <ClInclude Include="src\SliceTexture\SliceTexture.hpp">
+      <Filter>src\SliceTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SliceTexture\Animation\Animation.hpp">
       <Filter>src\SliceTexture\Animation</Filter>
     </ClInclude>
-    <ClInclude Include="src\Scene\SliceTexture\SliceTexture.hpp">
-      <Filter>src\SliceTexture</Filter>
+    <ClInclude Include="src\SliceTexture\Linearly\Linearly.hpp">
+      <Filter>src\SliceTexture\Linearly</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

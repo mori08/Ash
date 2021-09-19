@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../Scene.hpp"
+#include "RoomPlayer/RoomPlayer.hpp"
 
 namespace Ash
 {
@@ -11,6 +12,8 @@ namespace Ash
 	{
 	private:
 
+		RoomPlayer m_player;
+
 	public:
 
 		RoomScene(const InitData& init);
@@ -20,6 +23,13 @@ namespace Ash
 		void update() override;
 
 		void draw() const override;
+
+	private:
+
+		/// <summary>
+		/// プレイヤーの更新
+		/// </summary>
+		void updatePlayer();
 
 	};
 }

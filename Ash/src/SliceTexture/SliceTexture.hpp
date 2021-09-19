@@ -77,6 +77,15 @@ namespace Ash
 		}
 
 		/// <summary>
+		/// 画像の反転
+		/// </summary>
+		/// <param name="mirror"> trueのとき反転, falseのとき反転を解除 </param>
+		void mirror(bool mirror)
+		{
+			m_mirror = mirror;
+		}
+
+		/// <summary>
 		/// アニメーションの開始
 		/// </summary>
 		/// <param name="name"> アニメーションの名前 </param>

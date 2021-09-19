@@ -163,10 +163,11 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\MyLibrary\MyLibrary.cpp" />
     <ClCompile Include="src\MyPixelShader\MyPixelShader.cpp" />
+    <ClCompile Include="src\Scene\Room\RoomPlayer\RoomPlayer.cpp" />
     <ClCompile Include="src\Scene\Room\RoomScene.cpp" />
-    <ClCompile Include="src\Scene\SliceTexture\Animation\Animation.cpp" />
-    <ClCompile Include="src\Scene\SliceTexture\SliceTexture.cpp" />
     <ClCompile Include="src\Scene\Title\TitleScene.cpp" />
+    <ClCompile Include="src\SliceTexture\Animation\Animation.cpp" />
+    <ClCompile Include="src\SliceTexture\SliceTexture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ButtonSet\ButtonSet.hpp" />
@@ -175,12 +176,13 @@
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp" />
     <ClInclude Include="src\MyPixelShader\MyPixelShader.hpp" />
     <ClInclude Include="src\Scene\Load\LoadScene.hpp" />
+    <ClInclude Include="src\Scene\Room\RoomPlayer\RoomPlayer.hpp" />
     <ClInclude Include="src\Scene\Room\RoomScene.hpp" />
     <ClInclude Include="src\Scene\Scene.hpp" />
-    <ClInclude Include="src\Scene\SliceTexture\Animation\Animation.hpp" />
-    <ClInclude Include="src\Scene\SliceTexture\Linearly\Linearly.hpp" />
-    <ClInclude Include="src\Scene\SliceTexture\SliceTexture.hpp" />
     <ClInclude Include="src\Scene\Title\TitleScene.hpp" />
+    <ClInclude Include="src\SliceTexture\Animation\Animation.hpp" />
+    <ClInclude Include="src\SliceTexture\Linearly\Linearly.hpp" />
+    <ClInclude Include="src\SliceTexture\SliceTexture.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App\asset\shader\TitleLogoShader.hlsl">

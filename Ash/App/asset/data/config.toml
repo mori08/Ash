@@ -28,3 +28,19 @@
     backgroundPos = {x=0,y=80}
     blackRect1 = {x=0,y=0,  w=640,h=80}
     blackRect2 = {x=0,y=400,w=640,h=80}
+    playerInitX = 320
+    [RoomScene.Player]
+        textureSize = {x=80,y=96}
+        y = 352
+        speed = 90.0
+        [RoomScene.Player.WaitAnim]
+            posOrder = [
+                {t=0.0,x=1,y=0}
+            ]
+            loop = false
+        [RoomScene.Player.WalkAnim]
+            posOrder = [
+                {t=0.2,x=2,y=0},
+                {t=0.2,x=1,y=0}
+            ]
+            loop = true

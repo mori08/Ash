@@ -8,7 +8,6 @@ namespace Ash
 		, m_posOrder(getPosOrder(posOrder))
 		, m_isLoop(isLoop)
 	{
-
 	}
 
 

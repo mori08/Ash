@@ -6,12 +6,14 @@ namespace Ash
 {
 	RoomScene::RoomScene(const InitData& init)
 		: IScene(init)
+		, m_player(Config::get<int32>(U"RoomScene.playerInitX"))
 	{
 	}
 
 
 	void RoomScene::update()
 	{
+		updatePlayer();
 	}
 
 
@@ -27,7 +29,20 @@ namespace Ash
 		Scene::Rect().draw(MyWhite);
 		TextureAsset(U"RoomBackground").draw(BACKGROUND_POS);
 
+		m_player.draw();
+
 		BLACK_RECT_1.draw(MyBlack);
 		BLACK_RECT_2.draw(MyBlack);
+	}
+
+
+	void RoomScene::updatePlayer()
+	{
+		if (MouseL.down())
+		{
+			m_player.walk(Cursor::PosF().x);
+		}
+
+		m_player.update();
 	}
 }
