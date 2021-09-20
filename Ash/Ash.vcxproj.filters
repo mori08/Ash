@@ -102,6 +102,9 @@
     <Filter Include="src\Scene\Room\RoomEvent\TextEvent">
       <UniqueIdentifier>{6bc7f828-539c-4a88-9199-2b4d70a552bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene\Room\RoomEvent\SelectEvent">
+      <UniqueIdentifier>{6323c9ec-3709-4b93-bc1c-7225d89d9e9a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -274,6 +277,9 @@
     <ClCompile Include="src\Scene\Room\RoomEvent\TextEvent\TextEvent.cpp">
       <Filter>src\Scene\Room\RoomEvent\TextEvent</Filter>
     </ClCompile>
+    <ClCompile Include="src\Scene\Room\RoomEvent\SelectEvent\SelectEvent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp">
@@ -320,6 +326,9 @@
     </ClInclude>
     <ClInclude Include="src\Scene\Room\RoomEvent\TextEvent\TextEvent.hpp">
       <Filter>src\Scene\Room\RoomEvent\TextEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Room\RoomEvent\SelectEvent\SelectEvent.hpp">
+      <Filter>src\Scene\Room\RoomEvent\SelectEvent</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -47,6 +47,12 @@
             loop = true
     [RoomScene.Event]
         textDrawPos = {x=10,y=410}
-    [RoomScene.Event.Text]
-        drawSpeed = 15.0
-        
+        [RoomScene.Event.Text]
+            drawSpeed = 15.0
+            [RoomScene.Event.Text.YesButton]
+                name = "はい"
+                region = {x=420,y=440,w=100,h=30}
+            [RoomScene.Event.Text.NoButton]
+                name = "いいえ"
+                region = {x=530,y=440,w=100,h=30}
+            

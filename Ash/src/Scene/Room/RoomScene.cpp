@@ -4,6 +4,7 @@
 
 // ƒCƒxƒ“ƒg
 #include "RoomEvent/TextEvent/TextEvent.hpp"
+#include "RoomEvent/SelectEvent/SelectEvent.hpp"
 
 namespace Ash
 {
@@ -11,8 +12,11 @@ namespace Ash
 		: IScene(init)
 		, m_player(Config::get<int32>(U"RoomScene.playerInitX"))
 	{
-		m_event = std::make_unique<TextEvent>
-			(Array<String>{ String(U"Test1\nHello World"), String(U"Test2\nGoodBye World") });
+		m_event = std::make_unique<SelectEvent>(
+			U"Test Test Test Test Test",
+			[this]() { Print << U"Hello"; m_event = nullptr; },
+			[this]() { Print << U"World"; m_event = nullptr; }
+		);
 	}
 
 

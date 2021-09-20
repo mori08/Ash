@@ -10,6 +10,7 @@ namespace Ash
 		m_textList.emplace_back(text);
 	}
 
+
 	TextEvent::TextEvent(const Array<String>& textList)
 		: m_drawAbleLength(0)
 	{
@@ -18,6 +19,7 @@ namespace Ash
 			m_textList.emplace_back(text);
 		}
 	}
+
 
 	bool TextEvent::update()
 	{
