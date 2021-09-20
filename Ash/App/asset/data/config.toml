@@ -29,6 +29,7 @@
     blackRect1 = {x=0,y=0,  w=640,h=80}
     blackRect2 = {x=0,y=400,w=640,h=80}
     playerInitX = 320
+    roomRegion = {x=0,y=80,w=640,h=320}
     [RoomScene.Player]
         textureSize = {x=80,y=96}
         y = 352

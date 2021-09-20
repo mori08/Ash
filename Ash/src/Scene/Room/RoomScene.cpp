@@ -18,9 +18,14 @@ namespace Ash
 
 	void RoomScene::update()
 	{
-		updatePlayer();
-
-		if (m_event) { m_event->update(); }
+		if (m_event) 
+		{ 
+			if (m_event->update()) { m_event = nullptr; }
+		}
+		else
+		{
+			updatePlayer();
+		}
 	}
 
 
@@ -47,7 +52,10 @@ namespace Ash
 
 	void RoomScene::updatePlayer()
 	{
-		if (MouseL.down())
+		// •”‰®‚ð•`‰æ‚·‚é”ÍˆÍ
+		static const Rect ROOM_REGION = Config::get<Rect>(U"RoomScene.roomRegion");
+
+		if (ROOM_REGION.leftClicked())
 		{
 			m_player.walk(Cursor::PosF().x);
 		}
