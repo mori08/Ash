@@ -11,6 +11,10 @@ namespace Ash
 	{
 	public:
 
+		virtual ~RoomEvent() {}
+
+	public:
+
 		virtual bool update() = 0;
 
 		virtual void draw() const = 0;

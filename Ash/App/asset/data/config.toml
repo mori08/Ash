@@ -44,3 +44,8 @@
                 {t=0.2,x=1,y=0}
             ]
             loop = true
+    [RoomScene.Event]
+        textDrawPos = {x=10,y=410}
+    [RoomScene.Event.Text]
+        drawSpeed = 15.0
+        

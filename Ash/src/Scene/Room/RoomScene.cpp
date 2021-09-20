@@ -2,18 +2,25 @@
 #include "../../MyLibrary/MyLibrary.hpp"
 #include "../../Config/Config.hpp"
 
+// ƒCƒxƒ“ƒg
+#include "RoomEvent/TextEvent/TextEvent.hpp"
+
 namespace Ash
 {
 	RoomScene::RoomScene(const InitData& init)
 		: IScene(init)
 		, m_player(Config::get<int32>(U"RoomScene.playerInitX"))
 	{
+		m_event = std::make_unique<TextEvent>
+			(Array<String>{ String(U"Test1\nHello World"), String(U"Test2\nGoodBye World") });
 	}
 
 
 	void RoomScene::update()
 	{
 		updatePlayer();
+
+		if (m_event) { m_event->update(); }
 	}
 
 
@@ -33,6 +40,8 @@ namespace Ash
 
 		BLACK_RECT_1.draw(MyBlack);
 		BLACK_RECT_2.draw(MyBlack);
+
+		if (m_event) { m_event->draw(); }
 	}
 
 

@@ -2,6 +2,7 @@
 
 #include "../Scene.hpp"
 #include "RoomPlayer/RoomPlayer.hpp"
+#include "RoomEvent/RoomEvent.hpp"
 
 namespace Ash
 {
@@ -12,7 +13,11 @@ namespace Ash
 	{
 	private:
 
+		// プレイヤー
 		RoomPlayer m_player;
+
+		// イベント
+		std::unique_ptr<RoomEvent> m_event;
 
 	public:
 
