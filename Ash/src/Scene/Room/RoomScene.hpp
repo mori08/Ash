@@ -36,5 +36,10 @@ namespace Ash
 		/// </summary>
 		void updatePlayer();
 
+		/// <summary>
+		/// Œõ‚Ì•`‰æ
+		/// </summary>
+		void drawLight() const;
+
 	};
 }
