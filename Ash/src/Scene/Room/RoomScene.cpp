@@ -12,23 +12,25 @@ namespace Ash
 		: IScene(init)
 		, m_player(Config::get<int32>(U"RoomScene.playerInitX"))
 	{
-		m_event = std::make_unique<SelectEvent>(
+		m_eventList.emplace_back(std::make_unique<TextEvent>(Array<String>{U"a", U"b", U"c"}));
+
+		m_eventList.emplace_back(std::make_unique<SelectEvent>(
 			U"Test Test Test Test Test",
-			[this]() { Print << U"Hello"; m_event = nullptr; },
-			[this]() { Print << U"World"; m_event = nullptr; }
-		);
+			[this]() { Print << U"Hello"; m_eventList.pop_front(); },
+			[this]() { Print << U"World"; m_eventList.pop_front(); }
+		));
 	}
 
 
 	void RoomScene::update()
 	{
-		if (m_event) 
+		if (m_eventList.empty()) 
 		{ 
-			if (m_event->update()) { m_event = nullptr; }
+			updatePlayer();
 		}
 		else
 		{
-			updatePlayer();
+			if (m_eventList.front()->update()) { m_eventList.pop_front(); }
 		}
 	}
 
@@ -50,7 +52,7 @@ namespace Ash
 		BLACK_RECT_1.draw(MyBlack);
 		BLACK_RECT_2.draw(MyBlack);
 
-		if (m_event) { m_event->draw(); }
+		if (!m_eventList.empty()) { m_eventList.front()->draw(); }
 	}
 
 

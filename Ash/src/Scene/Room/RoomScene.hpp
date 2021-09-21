@@ -17,7 +17,7 @@ namespace Ash
 		RoomPlayer m_player;
 
 		// ƒCƒxƒ“ƒg
-		std::unique_ptr<RoomEvent> m_event;
+		std::list<std::unique_ptr<RoomEvent>> m_eventList;
 
 	public:
 
