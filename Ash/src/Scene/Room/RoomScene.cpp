@@ -11,14 +11,13 @@ namespace Ash
 	RoomScene::RoomScene(const InitData& init)
 		: IScene(init)
 		, m_player(Config::get<int32>(U"RoomScene.playerInitX"))
+		, m_screenTexture(U"RoomScreen", Config::get<Size>(U"RoomScene.Screen.textureSize"))
 	{
-		m_eventList.emplace_back(std::make_unique<TextEvent>(Array<String>{U"a", U"b", U"c"}));
-
-		m_eventList.emplace_back(std::make_unique<SelectEvent>(
-			U"Test Test Test Test Test",
-			[this]() { Print << U"Hello"; m_eventList.pop_front(); },
-			[this]() { Print << U"World"; m_eventList.pop_front(); }
-		));
+		static const Animation SCREEN_OFF_ANIM = Config::get<Animation>(U"RoomScene.Screen.offAnim");
+		static const Animation SCREEN_ON_ANIM  = Config::get<Animation>(U"RoomScene.Screen.onAnim");
+		m_screenTexture.setAnimation(U"off", SCREEN_OFF_ANIM);
+		m_screenTexture.setAnimation(U"on",  SCREEN_ON_ANIM);
+		m_screenTexture.start(U"on");
 	}
 
 
@@ -32,6 +31,8 @@ namespace Ash
 		{
 			if (m_eventList.front()->update()) { m_eventList.pop_front(); }
 		}
+
+		m_screenTexture.update();
 	}
 
 
@@ -43,9 +44,12 @@ namespace Ash
 		static Rect BLACK_RECT_1 = Config::get<Rect>(U"RoomScene.blackRect1");
 		// 下側の黒
 		static Rect BLACK_RECT_2 = Config::get<Rect>(U"RoomScene.blackRect2");
+		// 画面を表示する座標
+		static Point DRAW_POS = Config::get<Point>(U"RoomScene.Screen.drawPos");
 
 		drawLight();
 		TextureAsset(U"RoomBackground").draw(BACKGROUND_POS);
+		m_screenTexture.getTexture().draw(DRAW_POS);
 
 		m_player.draw();
 
@@ -82,5 +86,11 @@ namespace Ash
 		// ベッドの電球の光
 		static const Circle BED_LIGHT = Config::get<Circle>(U"RoomScene.bedLight");
 		BED_LIGHT.drawShadow(Vec2::Zero(), BED_LIGHT.r * LIGHT_BLUR_RATE, 0, MyGray);
+
+		// 画面の光
+		static const Circle SCREEN_LIGHT = Config::get<Circle>(U"RoomScene.screenLight");
+		static const double FREQUENCY = Config::get<double>(U"RoomScene.Screen.frequency");
+		static const double SPREAD    = Config::get<double>(U"RoomScene.Screen.spread");
+		SCREEN_LIGHT.drawShadow(Vec2::Zero(), SCREEN_LIGHT.r * LIGHT_BLUR_RATE, SPREAD*randomFrequency(FREQUENCY), MyGray);
 	}
 }

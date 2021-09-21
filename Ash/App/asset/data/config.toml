@@ -33,6 +33,7 @@
     lightBlurRate = 0.4
     overLight     = {x=470,y=188,r=240}
     bedLight      = {x=22, y=338,r=140}
+    screenLight   = {x=224,y=352,r=140}
     [RoomScene.Player]
         textureSize = {x=80,y=96}
         y = 352
@@ -46,6 +47,20 @@
             posOrder = [
                 {t=0.2,x=2,y=0},
                 {t=0.2,x=1,y=0}
+            ]
+            loop = true
+    [RoomScene.Screen]
+        textureSize = {x=80,y=68}
+        drawPos     = {x=184,y=332}
+        spread      = 3
+        frequency   = 0.2
+        [RoomScene.Screen.offAnim]
+            posOrder = [{t=0,x=0,y=0}]
+            loop     = false
+        [RoomScene.Screen.onAnim]
+            posOrder = [
+                {t=4.0,x=1,y=0},
+                {t=0.1,x=2,y=0}
             ]
             loop = true
     [RoomScene.Event]

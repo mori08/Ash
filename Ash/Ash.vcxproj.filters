@@ -278,7 +278,7 @@
       <Filter>src\Scene\Room\RoomEvent\TextEvent</Filter>
     </ClCompile>
     <ClCompile Include="src\Scene\Room\RoomEvent\SelectEvent\SelectEvent.cpp">
-      <Filter>src</Filter>
+      <Filter>src\Scene\Room\RoomEvent\SelectEvent</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

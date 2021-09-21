@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../Scene.hpp"
+#include "../../SliceTexture/SliceTexture.hpp"
 #include "RoomPlayer/RoomPlayer.hpp"
 #include "RoomEvent/RoomEvent.hpp"
 
@@ -18,6 +19,9 @@ namespace Ash
 
 		// ƒCƒxƒ“ƒg
 		std::list<std::unique_ptr<RoomEvent>> m_eventList;
+
+		// ‰æ–Ê‚Ì‰æ‘œ
+		SliceTexture m_screenTexture;
 
 	public:
 
