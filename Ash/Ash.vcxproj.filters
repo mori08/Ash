@@ -292,6 +292,9 @@
     <ClCompile Include="src\Scene\Game\Manager\Stage\StageManager.cpp">
       <Filter>src\Scene\Game\Manager\Stage</Filter>
     </ClCompile>
+    <ClCompile Include="src\Scene\Game\Manager\GameManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp">
@@ -344,6 +347,9 @@
     </ClInclude>
     <ClInclude Include="src\Scene\Game\Manager\Stage\StageManager.hpp">
       <Filter>src\Scene\Game\Manager\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Game\Manager\GameManager.hpp">
+      <Filter>src\Scene\Game\Manager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
