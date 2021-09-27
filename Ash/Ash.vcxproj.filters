@@ -108,11 +108,11 @@
     <Filter Include="src\Scene\Game">
       <UniqueIdentifier>{54911aaf-5f39-451d-8fe3-14455d8c78aa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Scene\Game\Stage">
-      <UniqueIdentifier>{746aacc1-a3a1-4071-892f-3540cb3398d4}</UniqueIdentifier>
+    <Filter Include="src\Scene\Game\Manager">
+      <UniqueIdentifier>{b95f6c7a-9709-4c45-8e62-7edbaaa48dbd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Scene\Game\Stage\Block">
-      <UniqueIdentifier>{f00a8077-698f-46a8-9813-b315c7e37dd7}</UniqueIdentifier>
+    <Filter Include="src\Scene\Game\Manager\Stage">
+      <UniqueIdentifier>{84b52600-48fb-445e-b7ec-b831e874344a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -289,8 +289,8 @@
     <ClCompile Include="src\Scene\Room\RoomEvent\SelectEvent\SelectEvent.cpp">
       <Filter>src\Scene\Room\RoomEvent\SelectEvent</Filter>
     </ClCompile>
-    <ClCompile Include="src\Scene\Game\Stage\Block\Block.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="src\Scene\Game\Manager\Stage\StageManager.cpp">
+      <Filter>src\Scene\Game\Manager\Stage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -342,8 +342,8 @@
     <ClInclude Include="src\Scene\Room\RoomEvent\SelectEvent\SelectEvent.hpp">
       <Filter>src\Scene\Room\RoomEvent\SelectEvent</Filter>
     </ClInclude>
-    <ClInclude Include="src\Scene\Game\Stage\Block\Block.hpp">
-      <Filter>src\Scene\Game\Stage\Block</Filter>
+    <ClInclude Include="src\Scene\Game\Manager\Stage\StageManager.hpp">
+      <Filter>src\Scene\Game\Manager\Stage</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

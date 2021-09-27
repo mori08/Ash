@@ -163,7 +163,7 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\MyLibrary\MyLibrary.cpp" />
     <ClCompile Include="src\MyPixelShader\MyPixelShader.cpp" />
-    <ClCompile Include="src\Scene\Game\Stage\Block\Block.cpp" />
+    <ClCompile Include="src\Scene\Game\Manager\Stage\StageManager.cpp" />
     <ClCompile Include="src\Scene\Room\RoomEvent\SelectEvent\SelectEvent.cpp" />
     <ClCompile Include="src\Scene\Room\RoomEvent\TextEvent\TextEvent.cpp" />
     <ClCompile Include="src\Scene\Room\RoomPlayer\RoomPlayer.cpp" />
@@ -178,7 +178,7 @@
     <ClInclude Include="src\Config\Config.hpp" />
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp" />
     <ClInclude Include="src\MyPixelShader\MyPixelShader.hpp" />
-    <ClInclude Include="src\Scene\Game\Stage\Block\Block.hpp" />
+    <ClInclude Include="src\Scene\Game\Manager\Stage\StageManager.hpp" />
     <ClInclude Include="src\Scene\Load\LoadScene.hpp" />
     <ClInclude Include="src\Scene\Room\RoomEvent\RoomEvent.hpp" />
     <ClInclude Include="src\Scene\Room\RoomEvent\SelectEvent\SelectEvent.hpp" />

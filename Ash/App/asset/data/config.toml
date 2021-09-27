@@ -74,3 +74,5 @@
                 name   = "いいえ"
                 region = {x=530,y=440,w=100,h=30}
             
+[GameScene]
+    squareSize = 100

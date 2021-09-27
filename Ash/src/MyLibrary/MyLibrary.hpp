@@ -117,6 +117,16 @@ namespace Ash
 	Array<Point> getGridPoint(const Rect& rect);
 
 	/// <summary>
+	/// 長方形内にある格子点のリストの取得
+	/// </summary>
+	/// <param name="size"> 長方形のサイズ </param>
+	/// <returns> Rect(Point::Zero(),size)内にある格子点 </returns>
+	Array<Point> getGridPoint(const Size& size)
+	{
+		return std::move(getGridPoint(Rect(Point::Zero(), size)));
+	}
+
+	/// <summary>
 	/// 角度からその方向を向いた単位ベクトルを取得
 	/// </summary>
 	/// <param name="angle"> 角度(rad) </param>
