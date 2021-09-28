@@ -24,6 +24,14 @@
         name   = "やめる"
         region = {x=245,y=400,w=150,h=30}
 
+[LoadScene]
+    loadingCircle      = {x=500,y=460,r=11}
+    loadingArcThicness = 2.0
+    loadingArcLength   = 5.0
+    smallCircleNum     = 10
+    textPos            = {x=530,y=445}
+    maxDotNum          = 4
+
 [RoomScene]
     backgroundPos = {x=0,y=80}
     blackRect1    = {x=0,y=0,  w=640,h=80}

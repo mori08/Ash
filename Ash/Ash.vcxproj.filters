@@ -292,8 +292,11 @@
     <ClCompile Include="src\Scene\Game\Manager\Stage\StageManager.cpp">
       <Filter>src\Scene\Game\Manager\Stage</Filter>
     </ClCompile>
+    <ClCompile Include="src\Scene\Load\LoadScene.cpp">
+      <Filter>src\Scene\Load</Filter>
+    </ClCompile>
     <ClCompile Include="src\Scene\Game\Manager\GameManager.cpp">
-      <Filter>src</Filter>
+      <Filter>src\Scene\Game\Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

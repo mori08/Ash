@@ -165,6 +165,7 @@
     <ClCompile Include="src\MyPixelShader\MyPixelShader.cpp" />
     <ClCompile Include="src\Scene\Game\Manager\GameManager.cpp" />
     <ClCompile Include="src\Scene\Game\Manager\Stage\StageManager.cpp" />
+    <ClCompile Include="src\Scene\Load\LoadScene.cpp" />
     <ClCompile Include="src\Scene\Room\RoomEvent\SelectEvent\SelectEvent.cpp" />
     <ClCompile Include="src\Scene\Room\RoomEvent\TextEvent\TextEvent.cpp" />
     <ClCompile Include="src\Scene\Room\RoomPlayer\RoomPlayer.cpp" />
