@@ -6,6 +6,7 @@
 #include"Scene/Title/TitleScene.hpp"
 #include"Scene/Room/RoomScene.hpp"
 #include"Scene/Game/LoadGameScene.hpp"
+#include"Scene/Game/GameScene.hpp"
 
 
 void Main()
@@ -31,6 +32,7 @@ void Main()
 	sceneManager.add<Ash::TitleScene   >(Ash::SceneName::TITLE    );
 	sceneManager.add<Ash::RoomScene    >(Ash::SceneName::ROOM     );
 	sceneManager.add<Ash::LoadGameScene>(Ash::SceneName::LOAD_GAME);
+	sceneManager.add<Ash::GameScene    >(Ash::SceneName::GAME     );
 
 	while (System::Update())
 	{

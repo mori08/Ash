@@ -24,11 +24,21 @@ namespace Ash
 	}
 
 
+	bool StageManager::isWalkAble(const Point& square) const
+	{
+		if (square.x < 0 || square.x >= m_size.x) { return false; }
+		if (square.y < 0 || square.y >= m_size.y) { return false; }
+		return !m_terrain[squareToInteger(square)];
+	}
+
+
 	void StageManager::drawDebugTerrain() const
 	{
 		for (const auto& p : getGridPoint(m_size))
 		{
-			RectF(squareSize() * p, squareSize()).draw(MyBlack);
+			RectF(squareSize() * p, squareSize())
+				.draw(isWalkAble(p) ? MyWhite : MyBlack)
+				.drawFrame(2, MyBlack);
 		}
 	}
 }

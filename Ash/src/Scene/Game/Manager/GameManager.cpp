@@ -6,11 +6,9 @@ namespace Ash
 {
 	void GameManager::load()
 	{
-		// Stage名
-		String stageName = U"Test";
-
 		// StageManager
-		const Size stageSize = Config::get<Size>(U"GameScene." + stageName + U".size");
+		String stageName = U"Test"; // Stage名
+		const Size stageSize = Config::get<Size>(U"GameScene." + stageName + U".size"); // ステージのマス数
 		m_stage.init(stageSize);
 		CSVData stageCSV(U"asset/data/stage/" + stageName + U".csv");
 		for (const auto& p : getGridPoint(stageSize))

@@ -25,6 +25,8 @@ namespace Ash
 
 	public:
 
+		/* 座標変換 */
+
 		/// <summary>
 		/// 1マスの一辺の長さ(ピクセル)の取得
 		/// </summary>
@@ -105,6 +107,8 @@ namespace Ash
 
 	public:
 
+		/* LoadGameSceneで使用 */
+
 		/// <summary>
 		/// 初期化
 		/// </summary>
@@ -117,6 +121,27 @@ namespace Ash
 		/// <param name="square"> マス座標 </param>
 		/// <param name="wall"  > trueのとき障害物の設置, falseのとき障害物を排除 </param>
 		void setTerrain(const Point& square, bool wall);
+
+	public:
+
+		/* GameSceneで使用 */
+
+		/// <summary>
+		/// 指定されたマス座標が行動可能か
+		/// </summary>
+		/// <param name="square"> マス座標 </param>
+		/// <returns> ステージ外であるときや障害物があるとき false , それ以外のとき true </returns>
+		bool isWalkAble(const Point& square) const;
+
+		/// <summary>
+		/// 指定されたピクセル座標が行動可能か
+		/// </summary>
+		/// <param name="pixel"> ピクセル座標 </param>
+		/// <returns> ステージ外であるときや障害物があるとき false , それ以外のとき true </returns>
+		bool isWalkAble(const Vec2& pixel) const
+		{
+			return isWalkAble(pixelToSquare(pixel));
+		}
 
 		/// <summary>
 		/// デバッグ用の地形の描画
