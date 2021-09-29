@@ -12,7 +12,7 @@ namespace Ash
 		// StageManager
 		const Size stageSize = Config::get<Size>(U"GameScene." + stageName + U".size");
 		m_stage.init(stageSize);
-		CSVData stageCSV(U"asset/data/stage" + stageName + U".csv");
+		CSVData stageCSV(U"asset/data/stage/" + stageName + U".csv");
 		for (const auto& p : getGridPoint(stageSize))
 		{
 			m_stage.setTerrain(p, stageCSV[p.y][p.x] == U"1");

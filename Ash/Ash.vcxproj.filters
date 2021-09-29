@@ -298,6 +298,9 @@
     <ClCompile Include="src\Scene\Game\Manager\GameManager.cpp">
       <Filter>src\Scene\Game\Manager</Filter>
     </ClCompile>
+    <ClCompile Include="src\Scene\Game\LoadGameScene.cpp">
+      <Filter>src\Scene\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MyLibrary\MyLibrary.hpp">
@@ -353,6 +356,9 @@
     </ClInclude>
     <ClInclude Include="src\Scene\Game\Manager\GameManager.hpp">
       <Filter>src\Scene\Game\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Game\LoadGameScene.hpp">
+      <Filter>src\Scene\Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -121,9 +121,9 @@ namespace Ash
 	/// </summary>
 	/// <param name="size"> 長方形のサイズ </param>
 	/// <returns> Rect(Point::Zero(),size)内にある格子点 </returns>
-	Array<Point> getGridPoint(const Size& size)
+	inline Array<Point> getGridPoint(const Size& size)
 	{
-		return std::move(getGridPoint(Rect(Point::Zero(), size)));
+		return std::move(getGridPoint(Rect(Point::Zero(), size - Point::One())));
 	}
 
 	/// <summary>

@@ -5,6 +5,7 @@
 // シーン
 #include"Scene/Title/TitleScene.hpp"
 #include"Scene/Room/RoomScene.hpp"
+#include"Scene/Game/LoadGameScene.hpp"
 
 
 void Main()
@@ -27,8 +28,9 @@ void Main()
 
 	// シーン設定
 	Ash::MyApp sceneManager;
-	sceneManager.add<Ash::TitleScene>(Ash::SceneName::TITLE);
-	sceneManager.add<Ash::RoomScene >(Ash::SceneName::ROOM );
+	sceneManager.add<Ash::TitleScene   >(Ash::SceneName::TITLE    );
+	sceneManager.add<Ash::RoomScene    >(Ash::SceneName::ROOM     );
+	sceneManager.add<Ash::LoadGameScene>(Ash::SceneName::LOAD_GAME);
 
 	while (System::Update())
 	{

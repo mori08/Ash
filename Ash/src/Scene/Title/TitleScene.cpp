@@ -46,7 +46,7 @@ namespace Ash
 		m_buttonSet.registerButton(loadgameButton());
 		m_buttonSet.registerButton(exitgameButton());
 
-		m_buttonSet.setOnClickFunc(newgameButton().getName(), [this]() {changeScene(SceneName::ROOM); });
+		m_buttonSet.setOnClickFunc(newgameButton().getName(), [this]() {changeScene(SceneName::LOAD_GAME); });
 
 		m_buttonSet.setSelectedButton(loadgameButton().getName());
 	}
