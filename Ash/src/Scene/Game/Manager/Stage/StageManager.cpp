@@ -11,10 +11,21 @@ namespace Ash
 	}
 
 
-	void StageManager::init(const Size& size)
+	void StageManager::load()
 	{
-		m_size = size;
+		// ステージ名
+		String stageName = U"Test";
+
+		// ステージのマス数の設定
+		m_size = Config::get<Size>(U"GameScene." + stageName + U".size");;
 		m_terrain = Array<bool>(m_size.x * m_size.y, false);
+
+		// CSVファイルの読み込み -> 地形の設定
+		CSVData stageCSV(U"asset/data/stage/" + stageName + U".csv");
+		for (const auto& p : getGridPoint(m_size))
+		{
+			m_terrain[squareToInteger(p)] = stageCSV[p.y][p.x] == U"1";
+		}
 	}
 
 

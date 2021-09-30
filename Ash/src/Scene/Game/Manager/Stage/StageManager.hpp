@@ -110,10 +110,13 @@ namespace Ash
 		/* LoadGameSceneで使用 */
 
 		/// <summary>
-		/// 初期化
+		/// 設定ファイルから地形の読み込み
 		/// </summary>
-		/// <param name="size"> 地形のマス座標でのサイズ </param>
-		void init(const Size& size);
+		void load();
+
+	public:
+
+		/* GameSceneで使用 */
 
 		/// <summary>
 		/// 地形を設定する
@@ -121,10 +124,6 @@ namespace Ash
 		/// <param name="square"> マス座標 </param>
 		/// <param name="wall"  > trueのとき障害物の設置, falseのとき障害物を排除 </param>
 		void setTerrain(const Point& square, bool wall);
-
-	public:
-
-		/* GameSceneで使用 */
 
 		/// <summary>
 		/// 指定されたマス座標が行動可能か
