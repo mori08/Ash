@@ -8,6 +8,10 @@ namespace Ash
 	{
 	private:
 
+		// ƒJƒƒ‰
+		Camera2D m_camera;
+
+		// ’nŒ`‚ÌŠÇ—
 		StageManager m_stage;
 
 	public:

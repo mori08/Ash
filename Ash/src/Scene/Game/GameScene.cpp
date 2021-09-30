@@ -10,6 +10,7 @@ namespace Ash
 
 	void GameScene::update()
 	{
+		getData().gameManager.update();
 	}
 
 
