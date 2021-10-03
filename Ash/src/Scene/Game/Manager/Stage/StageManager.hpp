@@ -23,6 +23,12 @@ namespace Ash
 		// 地形 trueのとき障害物あり
 		Array<bool> m_terrain;
 
+		// [i][j] : i -> j への最短経路(次の目標座標)
+		Array<Array<int32>> m_path;
+
+		// [i][j] : i -> j への最短距離(ピクセル)
+		Array<Array<double>> m_distance;
+
 	public:
 
 		/* 座標変換 */
@@ -114,6 +120,15 @@ namespace Ash
 		/// </summary>
 		void load();
 
+	private:
+
+		/// <summary>
+		/// マス1からマス2へ辺を設定
+		/// </summary>
+		/// <param name="s1"> マス1 </param>
+		/// <param name="s2"> マス2 </param>
+		void makeEdge(const Point& s1, const Point& s2);
+
 	public:
 
 		/* GameSceneで使用 */
@@ -131,6 +146,16 @@ namespace Ash
 		/// <param name="square"> マス座標 </param>
 		/// <returns> ステージ外であるときや障害物があるとき false , それ以外のとき true </returns>
 		bool isWalkAble(const Point& square) const;
+
+		/// <summary>
+		/// 指定された整数値に対応するマスが行動可能か
+		/// </summary>
+		/// <param name="integer"> マスに対応する整数値 </param>
+		/// <returns> ステージ外であるときや障害物があるとき false , それ以外のとき true </returns>
+		bool isWalkAble(int32 integer) const
+		{
+			return isWalkAble(integerToSquare(integer));
+		}
 
 		/// <summary>
 		/// 指定されたピクセル座標が行動可能か

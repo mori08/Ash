@@ -85,4 +85,4 @@
 [GameScene]
     squareSize = 100
     [GameScene.Test]
-        size = {x=10,y=10}
+        size = {x=20,y=20}

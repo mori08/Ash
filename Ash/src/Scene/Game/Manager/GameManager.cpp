@@ -6,8 +6,7 @@ namespace Ash
 {
 	void GameManager::load()
 	{
-		m_camera.setCenter(Vec2::Zero());
-		m_camera.setScale(1);
+		m_camera = Camera2D(Vec2::Zero(), 1, Camera2DParameters::MouseOnly());
 
 		m_stage.load();
 	}
@@ -26,6 +25,5 @@ namespace Ash
 			m_stage.drawDebugTerrain();
 			m_camera.draw();
 		}
-		Rect(0, 0, 10, 10).draw(Palette::Red);
 	}
 }
